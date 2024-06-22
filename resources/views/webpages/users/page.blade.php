@@ -1,5 +1,6 @@
 @extends('layouts.users')
-@section('title', 'Dashboard')
+@section('title', $article->title . ' - Article Page')
+
 @section('content')
 @extends('re_usable_users.header')
 

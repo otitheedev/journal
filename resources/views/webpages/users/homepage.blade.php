@@ -1,5 +1,5 @@
 @extends('layouts.users')
-@section('title', 'Dashboard')
+@section('title', 'Homepage')
 @section('content')
 @extends('re_usable_users.header')
 @extends('re_usable_users.slider')

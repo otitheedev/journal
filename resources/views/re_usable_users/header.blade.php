@@ -1,8 +1,10 @@
 
 @section('nav')
 <div class="container-lg">
+<a href="{{ url('/') }}">
 <img src="http://3.bp.blogspot.com/-ZdnQXXtu-UU/V0nX4BurYMI/AAAAAAAAIzQ/DPDwT0DqFQsJaL1EIh_GeaRTH6Sy-r4igCK4B/s1600/banner-2016.jpg" class="w-100">
-    <!-- Navbar -->
+</a>
+<!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Bangladesh Journal Of Experimental</a>
@@ -13,7 +15,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Executives</a>
