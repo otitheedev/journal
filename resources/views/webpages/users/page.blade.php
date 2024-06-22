@@ -9,7 +9,7 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
 
-            @if ($article)
+  @if ($article)
      <!-- Blog Post -->
          <article class="card mb-4">
          <img class="card-img-top" src="https://via.placeholder.com/750x300" alt="Card image cap">
@@ -18,9 +18,9 @@
                     <p class="card-text">{{ $article->abstract }}</p>
                  </div>
 
-                    <div class="card-footer text-muted">
-                    Posted on {{ \Carbon\Carbon::parse($article->created_at)->format('F j, Y') }} 
-                    </div>
+     <div class="card-footer text-muted">
+            Posted on {{ \Carbon\Carbon::parse($article->created_at)->format('F j, Y') }} 
+     </div>
 
    <div class="card-footer text-muted">keywords: <b>
     @foreach ($keywords as $keyword)
