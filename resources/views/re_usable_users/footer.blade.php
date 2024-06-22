@@ -3,7 +3,7 @@
 <!-- Footer -->
 <footer class="py-4 bg-dark">
         <div class="container text-center text-white">
-            &copy; 2024 Your Blog | Designed by You
+            &copy; 2024 @needyamin | Designed by Md. Yamin Hossain
         </div>
     </footer>
 

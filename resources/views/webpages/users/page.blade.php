@@ -8,11 +8,11 @@
     <div class="container mt-4">
         <div class="row">
             <!-- Blog Post Content Column -->
-            <div class="col-lg-8">
+            <div class="col-lg-7">
 
   @if ($article)
      <!-- Blog Post -->
-         <article class="card mb-4">
+         <article class="card mb-6">
          <img class="card-img-top" src="https://via.placeholder.com/750x300" alt="Card image cap">
             <div class="card-body">
                  <h2 class="card-title">{{ $article->title }}</h2>
@@ -37,6 +37,8 @@
     </div>
 
     </article>
+
+
     @endif
 
                 <!-- Comments Section
@@ -62,6 +64,10 @@
        
 </div>
     
+<div class="col-lg-1">
+    <div class="card"> ss </div>
+</div>
+
 @extends('re_usable_users.sidebar')
 @extends('re_usable_users.footer')
 @endsection

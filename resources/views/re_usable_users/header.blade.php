@@ -4,6 +4,7 @@
 <a href="{{ url('/') }}">
 <img src="http://3.bp.blogspot.com/-ZdnQXXtu-UU/V0nX4BurYMI/AAAAAAAAIzQ/DPDwT0DqFQsJaL1EIh_GeaRTH6Sy-r4igCK4B/s1600/banner-2016.jpg" class="w-100">
 </a>
+
 <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
