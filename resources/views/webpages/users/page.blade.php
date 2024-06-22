@@ -31,7 +31,7 @@
 
     <div class="card-footer text-muted">Uploaded Files: <br>
     @foreach (json_decode($article->upload_pdf) as $filePaths)
-        <a href="{{ $filePaths }}" target="_blank">{{ basename($filePaths) }}</a><br>
+        <a href="{{ url($filePaths) }}" target="_blank">{{ basename($filePaths) }}</a><br>
     @endforeach
     </div>
 

@@ -118,6 +118,9 @@ class ArticleController extends Controller
                 mkdir($destinationPath, 0755, true);
             }
             $file->move($destinationPath, $filename);
+            // Set permissions to 0755 for the uploaded file
+            //chmod($destinationPath . '/' . $filename, 0755);
+            
             $filePaths[] = 'uploads/' . $filename;
         }
       }
