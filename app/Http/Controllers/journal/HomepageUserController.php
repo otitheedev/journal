@@ -14,7 +14,7 @@ class HomepageUserController extends Controller
          $journals = DB::table('jdb_journals')->get();
          $article = DB::table('jdb_articles')->where('status', 1)->paginate(2);
  
-         return view('webpages.homepage.homepage', 
+         return view('webpages.users.homepage', 
          [
             'journals' => $journals,
             'article' => $article,
@@ -27,7 +27,7 @@ class HomepageUserController extends Controller
          $keywords = DB::table('jdb_article_keywords')->where('article_id', $articleId)
          ->join('jdb_keywords', 'jdb_article_keywords.keyword_id', '=', 'jdb_keywords.id')
          ->get(); 
-         return view('webpages.homepage.page', 
+         return view('webpages.users.page', 
          [
             'article' => $article,
             'keywords' => $keywords,

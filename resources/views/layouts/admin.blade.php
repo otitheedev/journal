@@ -24,13 +24,13 @@
 
 <body>
 	  <div class="wrapper">
-      @include('re_usable.aside')
+      @include('re_usable_admin.aside')
     <div class="main">
-      @include('re_usable.header')
+      @include('re_usable_admin.header')
         <main class="content">
            @yield('content') 
         </main>
-       @include('re_usable.footer')
+       @include('re_usable_admin.footer')
      </div>
     </div>
 

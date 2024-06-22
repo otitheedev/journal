@@ -1,14 +1,14 @@
-@extends('layouts.homepage')
+@extends('layouts.users')
 @section('title', 'Dashboard')
 @section('content')
-@extends('webpages_re_usable.header')
-@extends('webpages_re_usable.slider')
+@extends('re_usable_users.header')
+@extends('re_usable_users.slider')
 
-    <!-- Page Content -->
-    <div class="container mt-4">
-        <div class="row">
-            <!-- Blog Entries Column -->
-            <div class="col-lg-8">
+<!-- Page Content -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Blog Entries Column -->
+        <div class="col-lg-8">
 
             @if ($article)
             @foreach ($article as $articles)
@@ -34,7 +34,7 @@
 
 
 
-@extends('webpages_re_usable.sidebar')
-@extends('webpages_re_usable.footer')
+@extends('re_usable_users.sidebar')
+@extends('re_usable_users.footer')
 
 @endsection

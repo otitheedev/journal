@@ -23,7 +23,7 @@ class ArticleController extends Controller
 
         $keywords = DB::table('jdb_keywords')->get();
 
-        return view('webpages.articles_pages.index', [
+        return view('webpages.admin.articles_pages.index', [
             'articles' => $articles,
             'keywords' => $keywords
         ]);
@@ -84,7 +84,7 @@ class ArticleController extends Controller
     public function create(){
         $journals = DB::table('jdb_journals')->get();
         $keywords = DB::table('jdb_keywords')->get();
-        return view('webpages.articles_pages.create', [
+        return view('webpages.admin.articles_pages.create', [
             'journals' => $journals,
             'keywords' => $keywords,
         ]);

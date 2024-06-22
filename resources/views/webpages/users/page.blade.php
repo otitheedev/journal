@@ -1,7 +1,7 @@
-@extends('layouts.homepage')
+@extends('layouts.users')
 @section('title', 'Dashboard')
 @section('content')
-@extends('webpages_re_usable.header')
+@extends('re_usable_users.header')
 
  <!-- Page Content -->
     <div class="container mt-4">
@@ -61,6 +61,6 @@
        
 </div>
     
-@extends('webpages_re_usable.sidebar')
-@extends('webpages_re_usable.footer')
+@extends('re_usable_users.sidebar')
+@extends('re_usable_users.footer')
 @endsection

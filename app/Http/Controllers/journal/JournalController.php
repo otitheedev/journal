@@ -12,13 +12,13 @@ class JournalController extends Controller
      public function index()
      {
          $journals = DB::table('jdb_journals')->get();
-         return view('webpages.journal_pages.index', ['journals' => $journals]);
+         return view('webpages.admin.journal_pages.index', ['journals' => $journals]);
      }
  
      // Show the form for creating a new journal.
      public function create()
      {
-         return view('webpages.journal_pages.create');
+         return view('webpages.admin.journal_pages.create');
      }
  
      // Store a newly created journal in the database.
